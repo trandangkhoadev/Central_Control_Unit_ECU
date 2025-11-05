@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 4.2.0)
+
+project(CCU_Simulator)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+include_directories(${CMAKE_SOURCE_DIR}/inc)
+file(GLOB_RECURSE SRC_FILES
+    ${CMAKE_SOURCE_DIR}/src/someip/*.cpp
+    ${CMAKE_SOURCE_DIR}/src/doip/*.cpp
+    ${CMAKE_SOURCE_DIR}/main.cpp
+)
+
+add_executable(${PROJECT_NAME} ${SRC_FILES})
+
+message(STATUS "Project: ${PROJECT_NAME}")
+message(STATUS "C++ standard: ${CMAKE_CXX_STANDARD}")
+message(STATUS "Source files found: ${SRC_FILES}")

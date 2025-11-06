@@ -16,6 +16,9 @@
         build bootlib
             .\boostrap gcc -> after build successfully, the b2 file appearance
             .\b2 toolset=gcc --with-system --with-thread --with-filesystem link=static runtime-link=static variant=release -j4
+            -> after build successfully the boostxxxx.a
+    -> Build vsomeip to libraries .a
+        
 
 - when copy boost into /lib folder, if in the CMakeLists.txt have the line
     file(GLOB_RECURSE SRC_FILES ${CMAKE_SOURCE_DIR}/main.cpp)

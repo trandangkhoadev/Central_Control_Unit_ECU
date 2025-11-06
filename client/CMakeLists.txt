@@ -1,17 +1,14 @@
 cmake_minimum_required(VERSION 3.28.0)
 
-project(CCU_Simulator)
+project(Client_Simulator)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-include_directories(${CMAKE_SOURCE_DIR}/inc)
 include_directories(/home/khoa/cpp_project/k_lib/vsomeip/interface)
 
 file(GLOB SRC_FILES
-    ${CMAKE_SOURCE_DIR}/src/someip/*.cpp
-    ${CMAKE_SOURCE_DIR}/src/doip/*.cpp
     ${CMAKE_SOURCE_DIR}/main.cpp
 )
 link_directories(/home/khoa/cpp_project/k_lib/vsomeip/build)

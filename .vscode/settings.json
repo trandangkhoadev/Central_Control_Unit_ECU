@@ -128,6 +128,19 @@
     "shared_mutex": "cpp",
     "thread": "cpp",
     "typeindex": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "bit": "cpp",
+    "charconv": "cpp",
+    "compare": "cpp",
+    "concepts": "cpp",
+    "format": "cpp",
+    "numbers": "cpp",
+    "queue": "cpp",
+    "ranges": "cpp",
+    "semaphore": "cpp",
+    "span": "cpp",
+    "stop_token": "cpp",
+    "text_encoding": "cpp",
+    "variant": "cpp"
   }
 }

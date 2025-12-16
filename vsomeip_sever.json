@@ -1,0 +1,32 @@
+{
+  "unicast": "172.30.99.253",
+
+  "applications": [
+    {
+      "name": "ServerApp",
+      "id": "0x1111"
+    }
+  ],
+
+  "routing": "ServerApp",
+
+  "service-discovery": {
+    "enable": true,
+    "multicast": "224.244.224.245",
+    "port": 30490,
+    "ttl": 1
+  },
+  "services": [
+    {
+      "service": "0x1234",
+      "instance": "0x5678",
+      "unreliable": "30509",
+      "reliable": "30510"
+    }
+  ],
+
+  "logging": {
+    "level": "info",
+    "console": "true"
+  }
+}

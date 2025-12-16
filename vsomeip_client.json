@@ -1,0 +1,22 @@
+{
+  "unicast": "172.30.99.253",
+
+  "applications": [
+    {
+      "name": "ClientApp",
+      "id": "0x1112"
+    }
+  ],
+
+  "service-discovery": {
+    "enable": true,
+    "multicast": "224.244.224.245",
+    "port": 30490,
+    "ttl": 1
+    },
+
+  "logging": {
+    "level": "info",
+    "console": "true"
+  }
+}
